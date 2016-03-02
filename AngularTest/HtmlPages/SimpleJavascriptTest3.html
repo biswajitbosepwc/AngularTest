@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JavaScript Primer</title>
+    <script>
+        var valueOne = 3;
+        var valueTwo = "3";
+        if (valueOne == valueTwo) {
+            console.log("ValueOne and ValueTwo are the same");
+        } else {
+            console.log("ValueOne and ValueTwo are NOT the same");
+        }
+
+
+        var valueOne = 3;
+        var valueTwo = "3";
+        if (valueOne === valueTwo) {
+            console.log("ValueOne and ValueTwo are the same");
+        } else {
+            console.log("ValueOne and ValueTwo are NOT the same");
+        }
+        console.log("1" + 1);
+
+        // create a string variable
+        var myStringType = "22";
+        // use the handy typeof operator to
+        // confirm the type is indeed string
+        console.log(typeof myStringType);
+        // create a number variable
+        var myNumberType = 45;
+        // use the handy typeof operator to
+        // confirm the type is indeed number
+        console.log(typeof myNumberType);
+        // Now let's convert myStringType to
+        // a number type using the parseInt()
+        // method
+        var myStringType = parseInt(myStringType);
+        // confirm the type is indeed number
+        console.log(typeof myStringType);
+        // finally, let's convert the myNumberType
+        // to a string
+        var myNumberType = myNumberType.toString();
+        // confirm the type is indeed string
+        console.log(typeof myNumberType);
+
+        // Pre-increment
+        var myNumber = 1;
+        myNumber = myNumber + 1;
+        myNumber = ++myNumber;
+        console.log("Pre-increment result is " + myNumber);
+        // Post-increment
+        var myOtherNumber = 1;
+        myOtherNumber = myOtherNumber + 1;
+        myOtherNumber = myOtherNumber++;
+        console.log("Post increment result is " + myOtherNumber);
+
+
+
+    </script>
+</head>
+<body>
+    <script>
+
+        // Example 1
+        var myFirstObject = {};
+        myFirstObject.firstName = "Andrew";
+        myFirstObject.lastName = "Grant";
+        console.log(myFirstObject.firstName);
+        // Example 2
+        var mySecondObject = {
+            firstName: "Andrew",
+            lastName: "Grant"
+        };
+        console.log(mySecondObject.firstName);
+        // Example 3
+        var myThirdObject = new Object();
+        myThirdObject.firstName = "Andrew";
+        myThirdObject.lastName = "Grant";
+        console.log(myThirdObject.firstName);
+
+        var myFirstObject = {};
+        myFirstObject.firstName = "Andrew";
+        console.log(myFirstObject.firstName);
+        myFirstObject.firstName = "Monica";
+        console.log(myFirstObject.firstName);
+        myFirstObject["firstName"] = "Catie";
+        console.log(myFirstObject["firstName"]);
+
+        var myFirstObject = {};
+        myFirstObject["firstName"] = "Catie";
+        console.log(myFirstObject["firstName"]);
+        // Here we use a variable to determine which
+        // property we are accessing
+        var propertyName = "firstName";
+        myFirstObject[propertyName] = "Christopher";
+        console.log(myFirstObject["firstName"]);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Primer</title>
+</head>
+<body>
+    <script>
+        var myFunctionReference = function () {
+            console.log('callbacks part 1')
+        }
+        myFunctionReference();
+        myFunctionReference;
+        myFunctionReference();
+
+        function anotherFunctionReference() {
+            console.log('callbacks part 2');
+        }
+        var x = anotherFunctionReference;
+        x();
+        anotherFunctionReference();
+        x();
+        anotherFunctionReference();
+        x();
+        var actionsToTakeWhenServerHasResponded = function () {
+            console.log('The server just responded!')
+        }
+        function communicateWithServer(callback) {
+            callback();
+        }
+        communicateWithServer(actionsToTakeWhenServerHasResponded);
+    </script>
+</body>
+</html>

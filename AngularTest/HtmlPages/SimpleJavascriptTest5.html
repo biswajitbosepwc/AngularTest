@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Primer</title>
+</head>
+<body>
+    <script>
+        var myArray = [];
+        myArray[0] = "Andrew";
+        myArray[1] = "Monica";
+        myArray[2] = "Catie";
+        myArray[3] = "Jenna";
+        myArray[4] = "Christopher";
+        console.log("Item at index 0: " + myArray[0]);
+        console.log("Item at index 1: " + myArray[1]);
+        console.log("Item at index 2: " + myArray[2]);
+        console.log("Item at index 3: " + myArray[3]);
+        console.log("Item at index 4: " + myArray[4]);
+
+        var myArray = [];
+        myArray[myArray.length] = "Andrew";
+        myArray[myArray.length] = "Monica";
+        myArray[myArray.length] = "Catie";
+        myArray[myArray.length] = "Jenna";
+        myArray[myArray.length] = "Christopher";
+
+        // Display the first item
+        console.log("The first item is: " + myArray[0]);
+        // Dislay the last item
+        console.log("The last item is: " + myArray[myArray.length - 1]);
+
+        var myArray = ["Andrew", "Monica", "Catie", "Jenna", "Christopher"];
+        for (var i = 0; i < myArray.length; i++) {
+            console.log(myArray[i]);
+        }
+
+        var myArray = ["Andrew", "Monica", "Catie", "Jenna", "Christopher"];
+        console.log("Before: ", myArray);
+        for (var i = 0; i < myArray.length; i++) {
+            myArray[i] = myArray[i] + " Grant";
+        }
+        console.log("After: ", myArray);
+
+    </script>
+</body>
+</html>

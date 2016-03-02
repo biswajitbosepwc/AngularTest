@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Primer</title>
+    <script>
+        console.log("I am a statement");
+        console.log("I am also a statement");
+
+        function mySimpleFunction() {
+            console.log("Hello");
+        }
+        mySimpleFunction();
+        mySimpleFunction();
+
+        function tripler(numberToTriple) {
+            return 3 * numberToTriple;
+        }
+        console.log(tripler(150));
+        console.log(tripler(300));
+
+        var color = "red";
+        console.log("The color is " + color);
+
+        // declare some variables
+        var color, size, shape;
+        // assign values to them
+        color = 'blue';
+        size = 'large';
+        shape = 'circular';
+        console.log("Your widget is the color " + color + " and its size is " + size + ". It is " +
+        shape + " in shape.");
+
+        var bigProblem = "Billy said, \"How are you today?\", and smiled.";
+        console.log(bigProblem);
+
+        var val1 = 22;
+        var val2 = 23;
+        console.log(val1 + val2);
+        var val3 = 22.5;
+        var val4 = 23.5;
+        console.log(val3 + val4);
+        var val5 = 50;
+        var val6 = .6;
+        console.log(val5 + val6);
+        // watch out!
+        var val7 = 25;
+        var val8 = "25";
+        console.log(val7 + val8);
+
+        var myName = null;
+        console.log(myName)
+
+    </script>
+</head>
+<body>
+    <!-- an inline script -->
+    <script>
+        console.log("Here is another statement");
+        console.log("Here is the last statement");
+
+
+    </script>
+</body>
+</html>

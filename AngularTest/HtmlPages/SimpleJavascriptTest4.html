@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Primer</title>
+</head>
+<body>
+    <script>
+        var myCleverObject = {
+            firstName: "Andrew",
+            age: 21,
+            myInfo: function () {
+                console.log("My name is " + this.firstName + ". ");
+                console.log("My age is " + this.age + ".");
+            }
+        };
+        myCleverObject.myInfo();
+
+        var myObject = {
+            firstname: "Andrew",
+            surname: "Grant",
+            age: 21
+        };
+        for (var prop in myObject) {
+            console.log(myObject[prop]);
+        }
+
+        console.log("Looping started");
+        // set up the for loop here
+        for (i = 0; i < 5; i++) {
+            console.log("The current value of i is " + i + ". We will loop again because " + i + " is less than 5");
+        }
+        console.log("Looping finished");
+
+        var i = 0;
+        while (i < 10) {
+            console.log("The value of i is " + i);
+            i++;
+        }
+
+        var userIsLoggedIn = false;
+        if (userIsLoggedIn) {
+            console.log("Welcome back - sending you to some very private data");
+        } else {
+            console.log("Sorry - access denied");
+        }
+
+        var userIsLoggedIn = true;
+        var userIsVIP = true;
+        if (userIsLoggedIn) {
+            console.log("Welcome back - showing you some very private data");
+            if (userIsVIP) {
+                console.log("You are entitled to a 25% discount!");
+            } else {
+                console.log("You are entitled to a 10% discount!");
+            }
+        }
+
+    </script>
+</body>
+</html>
