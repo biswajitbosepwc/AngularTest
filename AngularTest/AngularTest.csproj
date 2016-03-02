@@ -88,6 +88,8 @@
     <Content Include="Global.asax" />
     <Content Include="HtmlPages\AngualrTest1.html" />
     <Content Include="HtmlPages\AngularTest2.html" />
+    <Content Include="HtmlPages\AngularTest3.html" />
+    <Content Include="HtmlPages\AngularTest4.html" />
     <Content Include="HtmlPages\SimpleJavascriptTest1.html" />
     <Content Include="HtmlPages\SimpleJavascriptTest2.html" />
     <Content Include="HtmlPages\SimpleJavascriptTest3.html" />
