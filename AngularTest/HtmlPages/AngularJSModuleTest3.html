@@ -1,0 +1,33 @@
+﻿
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../Scripts/angular.min.js"></script>
+    <script type="text/javascript">
+
+
+    </script>
+
+    <style>
+        input.ng-invalid {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body ng-app="">
+    <form name="myForm" ng-init="myText = 'post@myweb.com'">
+        <div>
+            Email:
+            <input type="email" name="myAddress" ng-model="myText" required />
+            <h1>Status</h1>
+            Email is Valid :  {{myForm.myAddress.$valid}} <br />
+            Dirty :  {{myForm.myAddress.$dirty}} <br />
+            Modified:  {{myForm.myAddress.$touched}} <br />
+        </div>
+        <div>
+            Enter your name:
+            <input name="myName" ng-model="text" required>
+        </div>
+    </form>
+</body>
+</html>
