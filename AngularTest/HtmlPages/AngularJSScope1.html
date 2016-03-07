@@ -1,0 +1,42 @@
+﻿
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../Scripts/angular.min.js"></script>
+    <script>
+        var app = angular.module('myApp', []);
+
+        app.run(function ($rootScope) {
+            $rootScope.color = 'blue';
+        });
+
+        app.controller('myCtrl', function ($scope) {
+            $scope.carname = "Volvo";
+            $scope.name = "Biswajit";
+            $scope.names = ["Emil", "Tobias", "Linus"];
+            $scope.color = "green";
+        });
+    </script>
+</head>
+<body ng-app="myApp">
+    <p>The rootScope's favorite color:</p>
+    <h1>{{color}}</h1>
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+
+        <h1>{{carname}}</h1>
+        <input ng-model="name">
+
+        <h1>My name is {{name}}</h1>
+        <ul>
+            <li ng-repeat="x in names">{{x}}</li>
+        </ul>
+        <div ng-controller="myCtrl">
+            <p>The scope of the controller's favorite color:</p>
+            <h1>{{color}}</h1>
+        </div>
+
+    </div>
+
+</body>
+</html>
